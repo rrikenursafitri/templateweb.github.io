@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+        <title>Halaman Register</title> 
+        <link rel="stylesheet" href="css/style.css">
+    </head> 
+    <body> 
+        <div class="container"> 
+          <div class="loginbox">
+            <h2>Halaman Register</h2>
+            <form action="#" method="POST">
+                <input type="text" placeholder="Nama Lengkap" id="fullname" name="fullname"/>
+                <input type="text" placeholder="Username" id="username" name="username"/>
+                <input type="password" placeholder="Password" id="password" name="password"/>
+                <input type="password" placeholder="konfirmasi Password" id="konfirmasi_password" name="konfirm_password" />
+                <input type="Submit" value="Register" name="register" onclick="return validate()" />
+            </form>
+          </div>
+        </div>
+    </body>
+</html>
+
+<script type="text/javascript"> 
+    function Validate() { 
+        var password = document.getElementById("password").value; 
+        var konfirmPassword = document.getElementById("konfirm_password").value; 
+        if (password != konfirmPassword) { 
+            alert("Passwords tidak sesuai"); 
+            return false; 
+         } 
+        return true; 
+     } 
+</script>

@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+/*Mengatur font dan background*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #555;
+}
+/*Membuat container menjadi flexbox dan kotak login berada di tengah */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+}
+/* Mengatur ukuran kotak login dan background*/
+.loginbox {
+    margin: 150px 0px 0px 0px;
+    flex-basis: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/*mengatur posisi judul halaman Login */
+.loginbox h2 {
+    border-bottom: 1px solid #cccccc;
+    color: #555;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 0 0 20px;
+}
+/*Mengatur agar box input dan select memenuhi ukuran form*/
+input,
+select {
+    width: 100%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    border: 1px solid #cccccc;
+}
+/*Mengatur tampilan tombol submit */
+input[type="submit"] {
+    background-color: #038ade;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+/*Mengatur warna tombol submit ketika ada cursor*/
+input[type="submit"]:hover {
+    background-color: #025487;
+}
