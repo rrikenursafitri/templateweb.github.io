@@ -1,0 +1,146 @@
+ /* ===========================================*/ 
+ /* Mengatur CSS Grid*/ 
+ /* ===========================================*/ 
+
+ /*Grid untuk Navbar*/ 
+ .grid-navbar { 
+  grid-area: header; 
+  background: #25476a; 
+  color: #fff; 
+  height: 70px; 
+} 
+
+/*Grid untuk Sidebar*/ 
+.grid-sidebar { 
+ grid-area: sidebar; 
+ background: #fff; 
+ padding: 20px; 
+ align-items: center; 
+ height: 100%; 
+} 
+
+/*Grid untuk topheader*/ 
+.grid-head { 
+ grid-area: topheader; 
+ background: #25476a; 
+ color: #fff; 
+ text-align: center; 
+ padding-top: 30px; 
+ margin: 0px; 
+ height: 150px; 
+} 
+
+/*Grid untuk Content*/ 
+.grid-content { 
+ grid-area: main; 
+ background: #fff; 
+ padding: 20px; 
+ height: 100vh; 
+} 
+
+.grid-container { 
+ display: grid; 
+ grid-template-areas: 
+   "header header header header header header" 
+   "sidebar topheader topheader topheader topheader topheader " 
+   "sidebar main main main main main"; 
+
+ width: 100vw; 
+ height: 100vh; 
+}
+
+/* ===========================================*/ 
+/* Akhir Mengatur CSS Grid*/ 
+/* ===========================================*/ 
+
+/*Membuat Header Sistem Akademik berada di kiri*/ 
+.navbarheader { 
+ padding: 20px; 
+ display: block; 
+ float: left; 
+ font-size: 19px; 
+} 
+  
+/*Membuat Menu Logout berada sebelah kanan*/ 
+.logout { 
+ padding: 20px; 
+ text-align: right; 
+ color: #fff; 
+} 
+  
+.logout a { 
+ text-decoration: none; 
+ color: rgba(255, 255, 255, 0.783); 
+} 
+  
+/*Pengaturan untuk gambar profile*/ 
+.profilepic { 
+ text-align: center; 
+} 
+ 
+/*Membuat border bundar untuk gambar profile*/ 
+.imground { 
+ border-radius: 50%; 
+ width: 80px; 
+} 
+  
+/*Pengaturan untuk menu navigasi*/ 
+.navigation { 
+ padding-top: 20px; 
+ border-top: 1px solid #cccccc; 
+} 
+
+.navigation a { 
+ text-decoration: none; 
+ color: #656565; 
+} 
+  
+.navigation a:hover { 
+text-decoration: none; color: #000000; 
+} 
+
+.navigation ul { 
+display: block; 
+list-style-type: disc; 
+width: 100%; 
+margin: 0px; 
+} 
+  
+.navigation li { 
+display: block; 
+list-style-type: disc; 
+padding: 10px 0 10px 0; 
+width: 100%; 
+} 
+  
+.navigation .active { 
+color: #fff; 
+background-color: #25476a; 
+border-radius: 3px; 
+padding: 10px 50px 10px 10px; 
+width: 100; 
+border-bottom: 1px solid #cccccc; 
+} 
+ 
+/*Pengaturan untuk judul konten*/ 
+.judul { 
+font-weight: 600; 
+border-bottom: 1px solid #cccccc; 
+}
+
+/*tabel*/
+.table{
+  text-align: center;
+  width: 80%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+  
+.table th{
+  background: #eee;
+}
